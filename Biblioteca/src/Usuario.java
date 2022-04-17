@@ -4,10 +4,10 @@ public class Usuario {
     private String apellidos;
     private String NIF;
     private String contraseña;
-    private ArrayList<String> listaReservas = new ArrayList<>();
+    private static ArrayList<String> listaReservas = new ArrayList<>();
 
 
-    public ArrayList<String> getlistaReservas() {return listaReservas;}
+    public static ArrayList<String> getlistaReservas() {return listaReservas;}
     public void setListaReservas(ArrayList<String> listaReservas) {this.listaReservas = listaReservas;}
 
     public String getNombre() {return nombre;}
@@ -142,7 +142,7 @@ public class Usuario {
                 System.out.println("Confirma con 'S' o 's'");
                 String eleccion6 = teclat.nextLine();
                 if (eleccion6 == "S" || eleccion6 == "s") {
-                    int posicio = -1;
+                    int posicio;
                     int x = 0;
                     boolean trobat2 = false;
                     while (trobat2 == false && x < listaLibros.size()) {

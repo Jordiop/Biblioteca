@@ -118,6 +118,7 @@ public class Libro {
                 i++;
             }
         }
+        System.out.println(posicio);
         return posicio;
     }
 
